@@ -3,15 +3,15 @@
 ## Set up
 ### Install Dependencies
 ```sh
-# cd path/to/repo
-# npm install
+$ cd path/to/repo
+$ npm install
 ```
 
 ### Install ESLint and rules
 ```sh
-# npm install -g ESLint
-# cd path/to/repo
-# npm install --save-dev eslint-config-rallycoding
+$ npm install -g ESLint
+$ cd path/to/repo
+$ npm install --save-dev eslint-config-rallycoding
 ```
 
 ### Install ESLint in VSCode
