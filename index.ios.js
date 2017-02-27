@@ -5,14 +5,11 @@
  */
 
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, Text, View } from 'react-native';
 
-export default class albums extends Component {
+import styles from './app/styles';
+
+export default class Albums extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -31,23 +28,4 @@ export default class albums extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('albums', () => albums);
+AppRegistry.registerComponent('albums', () => Albums);
