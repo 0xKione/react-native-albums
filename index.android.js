@@ -3,6 +3,7 @@
 import React from 'react';
 import { AppRegistry } from 'react-native';
 
-import Albums from './app/';  // Needs trailing slash for some reason
+import App from './src/app/';  // Import module from src/app/index.js file
 
-AppRegistry.registerComponent('albums', () => Albums);
+// Render the app to the device
+AppRegistry.registerComponent('albums', () => App);
