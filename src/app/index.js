@@ -2,15 +2,21 @@
 
 // Import libraries to help create a component
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 import Header from './components/header/';
+import AlbumList from './components/albumList/';
 import styles from './styles';   // Get styles from platform dependent file
 
 // Create the main component
 const App = () => {
+  // Need to have a flex: 1 style on the root view when using a ScrollView
+
   return (
-    <Header text={'Albums'} />
+    <View style={{ flex: 1 }}>
+      <Header text={'Albums'} />
+      <AlbumList />
+    </View>
   );
 };
 

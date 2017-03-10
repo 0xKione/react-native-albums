@@ -1,4 +1,4 @@
-// app/styles/index.ios.js
+// app/styles.ios.js
 
 import React, { StyleSheet } from 'react-native';
 

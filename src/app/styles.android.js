@@ -1,4 +1,4 @@
-// app/styles/index.android.js
+// app/styles.android.js
 
 import React, { StyleSheet } from 'react-native';
 
