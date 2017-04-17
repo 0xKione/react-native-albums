@@ -46,7 +46,7 @@ const AlbumDetail = ({ album }) => {
         />
       </CardSection>
     </Card>
-  )
+  );
 };
 
 // Make the component available to other parts of the app
