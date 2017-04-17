@@ -6,6 +6,7 @@ import { View, Text, Image } from 'react-native';
 
 import Card from './../card/';
 import CardSection from './../cardSection/';
+import Button from './../button/';
 import styles from './styles';
 
 // Make the component
@@ -39,11 +40,16 @@ const AlbumDetail = ({ album }) => {
           <Text>{artist}</Text>
         </View>
       </CardSection>
+
       <CardSection>
         <Image 
           style={albumImage}
           source={{ uri: image }}
         />
+      </CardSection>
+
+      <CardSection>
+        <Button onPress={ () => console.log(title) } />
       </CardSection>
     </Card>
   )
