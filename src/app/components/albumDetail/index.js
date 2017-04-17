@@ -52,7 +52,7 @@ const AlbumDetail = ({ album }) => {
         <Button onPress={ () => console.log(title) } />
       </CardSection>
     </Card>
-  )
+  );
 };
 
 // Make the component available to other parts of the app
