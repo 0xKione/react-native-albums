@@ -9,14 +9,13 @@ import styles from './styles';
 // Make the component
 const Button = (props) => {
   const { button, buttonText } = styles;
-  const { onPress } = props;
+  const { onPress, children } = props;
 
   return (
-    <TouchableOpacity 
-      onPress={ onPress } 
-      style={ button }
-    >
-      <Text style={ buttonText }>Click Me!</Text>
+    <TouchableOpacity onPress={onPress} style={button}>
+      <Text style={buttonText}>
+        {children}
+      </Text>
     </TouchableOpacity>
   );
 };

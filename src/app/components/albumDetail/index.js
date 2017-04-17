@@ -2,7 +2,7 @@
 
 // Import libraries for making the components
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Linking } from 'react-native';
 
 import Card from './../card/';
 import CardSection from './../cardSection/';
@@ -15,7 +15,8 @@ const AlbumDetail = ({ album }) => {
     title, 
     artist, 
     thumbnail_image, 
-    image 
+    image,
+    url
   } = album;   // Destructuring passed in object
 
   const { 
@@ -49,7 +50,9 @@ const AlbumDetail = ({ album }) => {
       </CardSection>
 
       <CardSection>
-        <Button onPress={ () => console.log(title) } />
+        <Button onPress={() => Linking.openURL(url)}>
+          Buy Now
+        </Button>
       </CardSection>
     </Card>
   );
