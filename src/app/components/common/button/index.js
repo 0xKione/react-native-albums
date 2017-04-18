@@ -21,4 +21,4 @@ const Button = (props) => {
 };
 
 // Make the component available to other parts of the app
-export default Button;
+export { Button };

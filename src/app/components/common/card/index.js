@@ -7,15 +7,12 @@ import { View } from 'react-native';
 import styles from './styles';
 
 // Make the component
-const Card = (props) => {
+const Card = (props) => (
   // Using props.children will render whatever is between the <Card> tags
-
-  return (
-    <View style={styles.container}>
-      {props.children}
-    </View>
-  );
-};
+  <View style={styles.container}>
+    {props.children}
+  </View>
+);
 
 // Make the component available to other parts of the app
-export default Card;
+export { Card };

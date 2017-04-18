@@ -1,6 +1,5 @@
 // index.ios.js
 
-import React from 'react';
 import { AppRegistry } from 'react-native';
 
 import App from './src/app/';  // Import module from src/app/index.js file

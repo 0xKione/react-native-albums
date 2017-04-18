@@ -33,7 +33,7 @@ class AlbumList extends Component {
       </ScrollView>
     );
   }
-};
+}
 
 // Make the component available to other parts of the app
 export default AlbumList;

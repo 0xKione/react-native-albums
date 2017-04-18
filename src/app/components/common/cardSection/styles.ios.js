@@ -1,7 +1,7 @@
 // src/app/components/cardSection/styles.android.js
 
 // Import the dependencies of the style sheet
-import React, { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 // Create the style sheet
 const styles = StyleSheet.create({

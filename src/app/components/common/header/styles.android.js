@@ -1,7 +1,7 @@
-// src/app/components/header/styles.ios.js
+// src/app/components/header/styles.android.js
 
 // Import the dependencies of the style sheet
-import React, { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 // Create the style sheet
 const styles = StyleSheet.create({
@@ -10,13 +10,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: 60,
-    paddingTop: 15,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.2,
+    borderColor: 'rgba(0,0,0,0.15)',
+    borderBottomWidth: 2,
     elevation: 2,
     position: 'relative'
   },

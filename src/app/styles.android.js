@@ -1,13 +1,11 @@
 // app/styles.android.js
 
-import React, { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    // Need to have a flex: 1 style on the root view when using a ScrollView
+    flex: 1
   },
   welcome: {
     fontSize: 20,

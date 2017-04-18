@@ -4,9 +4,7 @@
 import React from 'react';
 import { View, Text, Image, Linking } from 'react-native';
 
-import Card from './../card/';
-import CardSection from './../cardSection/';
-import Button from './../button/';
+import { Card, CardSection, Button } from './../common/';
 import styles from './styles';
 
 // Make the component
