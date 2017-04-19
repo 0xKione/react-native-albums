@@ -1,11 +1,11 @@
-// src/app/components/card/styles.ios.js
+// src/app/components/common/card/styles.ios.js
 
 // Import the dependencies of the style sheet
 import { StyleSheet } from 'react-native';
 
 // Create the style sheet
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     borderWidth: 1,
     borderRadius: 2,
     borderColor: '#DDD',

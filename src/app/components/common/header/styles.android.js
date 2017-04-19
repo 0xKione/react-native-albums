@@ -1,11 +1,11 @@
-// src/app/components/header/styles.android.js
+// src/app/components/common/header/styles.android.js
 
 // Import the dependencies of the style sheet
 import { StyleSheet } from 'react-native';
 
 // Create the style sheet
 const styles = StyleSheet.create({
-  view: {
+  viewStyle: {
     backgroundColor: '#F8F8F8',
     justifyContent: 'center',
     alignItems: 'center',
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     elevation: 2,
     position: 'relative'
   },
-  text: {
+  textStyle: {
     fontSize: 20
   }
 });

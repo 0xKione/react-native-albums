@@ -1,11 +1,11 @@
-// src/app/components/cardSection/styles.android.js
+// src/app/components/common/cardSection/styles.android.js
 
 // Import the dependencies of the style sheet
 import { StyleSheet } from 'react-native';
 
 // Create the style sheet
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     borderBottomWidth: 1,
     borderColor: '#DDD',
     padding: 5,

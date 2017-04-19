@@ -5,23 +5,23 @@ import React, { StyleSheet } from 'react-native';
 
 // Create the style sheet
 const styles = StyleSheet.create({
-  headerContent: {
+  headerContentStyle: {
     flexDirection: 'column',
     justifyContent: 'space-around'
   },
-  headerText: {
+  headerTextStyle: {
     fontSize: 18
   },
-  thumbnail: {
+  thumbnailStyle: {
     height: 50,
     width: 50
   },
-  thumbnailContainer: {
+  thumbnailContainerStyle: {
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: 10
   },
-  albumImage: {
+  albumImageStyle: {
     height: 300,
     flex: 1,
     width: null

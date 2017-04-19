@@ -1,11 +1,11 @@
-// src/app/components/button/styles.android.js
+// src/app/components/common/button/styles.android.js
 
 // Import the dependencies of the style sheet
 import { StyleSheet } from 'react-native';
 
 // Create the style sheet
 const styles = StyleSheet.create({
-  button: {
+  buttonStyle: {
     flex: 1,
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     borderColor: '#007AFF',
     marginHorizontal: 5
   },
-  buttonText: {
+  buttonTextStyle: {
     alignSelf: 'center',
     color: '#007AFF',
     fontSize: 16,

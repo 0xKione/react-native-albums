@@ -3,8 +3,10 @@
 // Import libraries for making the components
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
+import firebase from 'firebase';
 
-import AlbumDetail from './../albumDetail/';
+import AlbumDetail from '../albumDetail/';
+import { Button } from '../common/';
 
 // Make the components
 class AlbumList extends Component {
@@ -18,6 +20,10 @@ class AlbumList extends Component {
       });
   }
 
+  logout() {
+    firebase.auth().signOut();
+  }
+
   renderAlbums() {
     return this.state.albums.map(album =>
       <AlbumDetail key={album.title} album={album} />
@@ -25,10 +31,11 @@ class AlbumList extends Component {
   }
 
   render() {
-    console.log(this.state);
-
     return (
       <ScrollView>
+        <Button onPress={this.logout}>
+          Log Out
+        </Button>
         {this.renderAlbums()}
       </ScrollView>
     );

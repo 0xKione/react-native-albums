@@ -1,4 +1,4 @@
-// src/app/components/card/index.js
+// src/app/components/common/button/index.js
 
 // Import libraries for making the components
 import React from 'react';
@@ -8,12 +8,12 @@ import styles from './styles';
 
 // Make the component
 const Button = (props) => {
-  const { button, buttonText } = styles;
+  const { buttonStyle, buttonTextStyle } = styles;
   const { onPress, children } = props;
 
   return (
-    <TouchableOpacity onPress={onPress} style={button}>
-      <Text style={buttonText}>
+    <TouchableOpacity onPress={onPress} style={buttonStyle}>
+      <Text style={buttonTextStyle}>
         {children}
       </Text>
     </TouchableOpacity>

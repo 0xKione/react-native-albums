@@ -18,31 +18,31 @@ const AlbumDetail = ({ album }) => {
   } = album;   // Destructuring passed in object
 
   const { 
-    thumbnail, 
-    headerContent,
-    headerText,
-    thumbnailContainer,
-    albumImage
+    thumbnailContainerStyle,
+    thumbnailStyle, 
+    headerContentStyle,
+    headerTextStyle,
+    albumImageStyle
   } = styles;    // Destructuring styles
 
   return (
     <Card>
       <CardSection>
-        <View style={thumbnailContainer}>
+        <View style={thumbnailContainerStyle}>
           <Image 
-            style={thumbnail} 
+            style={thumbnailStyle} 
             source={{ uri: thumbnail_image }} 
           />
         </View>
-        <View style={headerContent}>
-          <Text style={headerText}>{title}</Text>
+        <View style={headerContentStyle}>
+          <Text style={headerTextStyle}>{title}</Text>
           <Text>{artist}</Text>
         </View>
       </CardSection>
 
       <CardSection>
         <Image 
-          style={albumImage}
+          style={albumImageStyle}
           source={{ uri: image }}
         />
       </CardSection>
